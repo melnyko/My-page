@@ -1,3 +1,99 @@
-.contact {
-    background-color: grey;
+#home {
+    height: 700px;
+    width: 1250px;
+    background-image: url("/img/home-picture.jpg");
+    background-size: 1250px;
+}
+#my_photo{
+    width: 402px;
+    height: 471px;
+}
+h1{
+    color: #ffffff;
+    text-align: center;
+    padding-top: 300px;
+}
+#home_words{
+    color: #ffffff;
+    text-align: center;
+}
+#home_about{
+    color: #ffffff;
+    text-align: center;
+}
+#home_portfolio{
+    color: #ffffff;
+    text-align: center;
+}
+#name_nav{
+    color: #444444;
+}
+ul li{
+    list-style-type: none;
+    display: inline;
+    color: #444444;
+}
+nav{
+    background-color: #ebebeb;
+    height: 60px;
+    width: 1250px;
+}
+.line{
+    background-color: #629c44;
+    width: 190px;
+    height: 2px;
+}
+h2{
+    color:#232323;
+    text-align: center;
+}
+.about_me{
+    color: #444444;
+    text-align: center;
+}
+p{
+    color: #444444;
+}
+.portfolio{
+    width: 200px;
+    height: 220px;
+}
+.education{
+    color: #4c7a34;
+}
+#contact{
+    color: white;
+    height: 700px;
+    width: 1250px;
+    background-image: url("/img/contact.jpg");
+    background-size: 1300px;
+}
+#contact_me{
+    color: white;
+}
+#contact_leave_data{
+    color: white;
+}
+#contact_leave_message{
+    color: white;
+}
+#fb_icon{
+    width:30px;
+}
+#github_icon{
+    width:35px; 
+}
+#instagram_icon{
+    width:35px; 
+}
+#linkedin_icon{
+    width:55px;
+}
+footer{
+    height: 40px;
+    width: 1250px;
+    background-color: #ebebeb;
+}
+#footer{
+    color: #444444;
 }

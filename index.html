@@ -3,104 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <title>OM Web-developer</title>
-    <link rel = "stylesheet" href = "css/index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     
-    <header id = "home">
+    <header id="home">
         <h1>Hello, I'm Olha Melnyk</h1>
-        <h2>Front End Developer</h2>
-        <p>About me</p> <p>My Portfolio</p>
+        <p id="home_words">Front End Developer</p>
+        <p id="home_about">About me</p> <p id="home_portfolio">My Portfolio</p>
     </header>
     <hr>
     <nav>
-        <p>Olha Melnyk</p>
-        <ul type = "none">
-            <li><a href = "#home">HOME</a></li>
-            <li><a href = "#about_me">ABOUT</a></li>
-            <li><a href = "#my_portfolio">PORTFOLIO</a></li>
-            <li><a href = "#education">RESUME</a></li>
-            <li><a href = "#contact">CONTACT</a></li>
+        <p id="name_nav">Olha Melnyk</p>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about_me">ABOUT</a></li>
+            <li><a href="#my_portfolio">PORTFOLIO</a></li>
+            <li><a href="#education">RESUME</a></li>
+            <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
     <hr>
     <article>
-        <section id = "about_me">
+        <section id="about_me">
             <h2>About me</h2>
-            <img src = "img/my-photo.jpg" alt = "my-photo" width = "402" height = "471">
-            <p>About me About me About me About me About me About me About me About me About me</p>
-            <p>About me About me About me About me About me About me About me About me.</p>
+            <hr class="line">
+            <img src="img/my-photo.jpg" alt="my-photo" id="my_photo" >
+            <p class="about_me">About me About me About me About me About me About me About me About me About me</p>
+            <p class="about_me">About me About me About me About me About me About me About me About me.</p>
             <br>
-            <p>About me About me About me About me About me About me About me About me About me </p>
-            <p>About me About me About me About me About me About me About me About me About me </p>
-            <p>About me About me About me About me About me About me About me About me .</p>
+            <p class="about_me">About me About me About me About me About me About me About me About me About me </p>
+            <p class="about_me">About me About me About me About me About me About me About me About me About me </p>
+            <p class="about_me">About me About me About me About me About me About me About me About me .</p>
             <br>
-            <p>About me About me About me About me About me About me About me About me About me </p>
-            <p>About me About me About me About me About me About me About me About me About me </p>
-            <p>About me About me About me About me About me About me About me About me .</p>
+            <p class="about_me">About me About me About me About me About me About me About me About me About me </p>
+            <p class="about_me">About me About me About me About me About me About me About me About me About me </p>
+            <p class="about_me">About me About me About me About me About me About me About me About me .</p>
         </section>
         <hr>
-        <section id = "my_portfolio">
+        <section id="my_portfolio">
             <h2>My Portfolio</h2>
+            <hr class="line">
+            <p class="about_me">There are some of my projects. Please, go to "See more" to see more works and some details about it.</p>
             <br>
-            <p>There are some of my projects. Please, go to "See more" to see more works and some details about it.</p>
+            <img src="img/portfolio/portfolio_2.jpg" alt="portfolio_2" class="portfolio"> 
+            <img src="img/portfolio/portfolio_3.jpg" alt="portfolio_3" class="portfolio">
+            <img src="img/portfolio/portfolio_6.jpg" alt="portfolio_6" class="portfolio">
+            <img src="img/portfolio/portfolio_4.jpg" alt="portfolio_4" class="portfolio">
             <br>
-            <img src = "img/portfolio/portfolio_2.jpg" alt="portfolio_2" width = "200" height = "220"> 
-            <img src = "img/portfolio/portfolio_3.jpg" alt="portfolio_3" width = "200" height = "220">
-            <img src = "img/portfolio/portfolio_6.jpg" alt="portfolio_6" width = "182" height = "220">
-            <img src = "img/portfolio/portfolio_4.jpg" alt="portfolio_4" width = "250" height = "220">
-            <br>
-            <img src = "img/portfolio/portfolio_5.jpg" alt="portfolio_5" width = "200" height = "195">
-            <img src = "img/portfolio/portfolio_1.jpg" alt="portfolio_1" width = "200" height = "195">
-            <img src = "img/portfolio/portfolio_2.jpg" alt="portfolio_2" width = "182" height = "195">
-            <img src = "img/portfolio/portfolio_4.jpg" alt="portfolio_4" width = "250" height = "195">
-            <p><u>See more</u></p>
+            <img src="img/portfolio/portfolio_5.jpg" alt="portfolio_5" class="portfolio">
+            <img src="img/portfolio/portfolio_1.jpg" alt="portfolio_1" class="portfolio">
+            <img src="img/portfolio/portfolio_2.jpg" alt="portfolio_2" class="portfolio">
+            <img src="img/portfolio/portfolio_4.jpg" alt="portfolio_4" class="portfolio">
             <hr>
         </section>
-        <section id = "education">
+        <section id="education">
             <h2>Education</h2>
+            <hr class = "line">
             <p>2002-2013</p>
             <p>School 10, Lviv</p>
-            <p>High School Degree</p>
+            <p class="education">High School Degree</p>
             <p>2013-2017</p>
             <p>Lviv Polytechnic National University</p>
-            <p>Bachelor Degree</p>
+            <p class="education">Bachelor Degree</p>
             <p>Computer Science, Computer Aided Design (CAD)</p>
             <p>2017-Present</p>
             <p>Lviv Polytechnic National University</p>
-            <p>Master Degree</p>
+            <p class="education">Master Degree</p>
             <p>Computer Science, Computer Aided Design (CAD)</p>
             <hr>
         </section>
-        <section class = "contact" id = "contact">
-            <h2>Contact me</h2>
-            <p>Please, leave your data and I will contact with you. Thank you!</p>
-            <h3>Leave me a message</h3>
+        <section id="contact">
+            <h2 id="contact_me">Contact me</h2>
+            <p id="contact_leave_data">Please, leave your data and I will contact with you. Thank you!</p>
+            <p id="contact_leave_message">Leave me a message</p>
             <form>
             <label>
-                <input type="text" name="name" placeholder = "Your name" required>
+                <input type="text" name="name" placeholder="Your name" required>
             </label>
             <label>
-                <input type="email" name="email" placeholder = "Your email" required>
+                <input type="email" name="email" placeholder="Your email" required>
             </label>
             <br>
             <br>
             <label>
-                <textarea name = "comment" placeholder = "Your message" required></textarea>
+                <textarea name="comment" placeholder="Your message" required></textarea>
             </label>
             <br>
-            <input type="submit" value = "Send message">
+            <input type="submit" value="Send message">
             </form>
             <br>
             <br>
-            <img src = "img/icons/fb_icon.png" alt="fb_icon" width = "30" height = "30">
-            <img src = "img/icons/github_icon.png" alt="github_icon" width = "35" height = "35">
-            <img src = "img/icons/instagram_icon.png" alt="instagram_icon" width = "35" height = "35">
-            <img src = "img/icons/linkedin_icon.png" alt="linkedin_icon" width = "40" height = "40">
+            <img src="img/icons/fb_icon.png" alt="fb_icon" id="fb_icon">
+            <img src="img/icons/github_icon.png" alt="github_icon" id="github_icon">
+            <img src="img/icons/instagram_icon.png" alt="instagram_icon" id="instagram_icon">
+            <img src="img/icons/linkedin_icon.png" alt="linkedin_icon" id="linkedin_icon">
         </section>
     </article>
     <footer>
-        <p>2017 &copy; Melnyk</p>
+        <p id="footer">2017 &copy; Melnyk</p>
     </footer>
     
 </body>
