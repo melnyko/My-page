@@ -3,41 +3,57 @@
     width: 1250px;
     background-image: url("/img/home-picture.jpg");
     background-size: 1250px;
+
+}
+#logo{
+    margin-top: 70px;
+    margin-left: 70px;
+    width: 100px;
 }
 #my_photo{
-    width: 402px;
-    height: 471px;
-    text-align: center;
+    width: 100px;
+    position: relative;
+    left: 30%;
+    top: 40%;
 }
 h1{
     color: #ffffff;
     text-align: center;
-    padding-top: 300px;
+    padding-top: 50px;
 }
 #home_words{
     color: #ffffff;
     text-align: center;
 }
-#home_about{
+.home_bottom{
     color: #ffffff;
     text-align: center;
 }
-#home_portfolio{
-    color: #ffffff;
-    text-align: center;
-}
+
 #name_nav{
     color: #444444;
+    position: relative;
+    top: 20px;
+    left: 25px;
+    font-size: 20px;
 }
 ul li{
     list-style-type: none;
+    font-size: 20px;
     display: inline;
     color: #444444;
+    text-align: center;
+    position: relative;
+    left: 600px;
+    bottom: 23px;
+    margin-right: 35px;
+    
 }
 nav{
     background-color: #ebebeb;
     height: 60px;
     width: 1250px;
+    /*position: fixed;*/
 }
 .line{
     background-color: #629c44;
@@ -58,6 +74,10 @@ p{
 .portfolio{
     width: 200px;
     height: 220px;
+    position: relative;
+    left: 15%;
+    top: 40%;
+    margin: 10px;
 }
 .education{
     color: #4c7a34;
@@ -79,7 +99,7 @@ p{
     color: white;
 }
 #fb_icon{
-    width:30px;
+    width:35px;
 }
 #github_icon{
     width:35px; 
@@ -88,7 +108,10 @@ p{
     width:35px; 
 }
 #linkedin_icon{
-    width:55px;
+    width:35px;
+}
+#twitter_icon{
+    width:35px;
 }
 footer{
     height: 40px;
