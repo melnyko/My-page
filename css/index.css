@@ -1,7 +1,7 @@
 #home {
     height: 700px;
     width: 1250px;
-    background-image: url("/img/home-picture.jpg");
+    background-image: url("../img/home-picture.jpg");
     background-size: 1250px;
 
 }
@@ -82,11 +82,11 @@ p{
 .education{
     color: #4c7a34;
 }
-#contact{
+#contact_nav{
     color: white;
     height: 700px;
     width: 1250px;
-    background-image: url("/img/contact.jpg");
+    background-image: url("../img/contact.jpg");
     background-size: 1300px;
 }
 #contact_me{
