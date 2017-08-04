@@ -180,8 +180,8 @@ p{
     height: 700px;
     max-width: 1300px;
     background-image: url("../img/contact.jpg");
-    background-size: 1300px;
-    margin: 0 0 0 0;
+     background-position: center center;
+    background-size: cover;
 }
 #contact_me{
     color: white;
