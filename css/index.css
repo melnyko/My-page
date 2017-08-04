@@ -1,12 +1,14 @@
+* {
+    margin: 0;
+}
 #home {
     height: 700px;
-    width: 1250px;
     background-image: url("../img/home-picture.jpg");
-    background-size: 1250px;
-
+    background-position: center center;
+    background-size: cover;
 }
 #logo{
-    margin-top: 70px;
+    margin-top: 100px;
     margin-left: 70px;
     width: 100px;
 }
@@ -19,46 +21,100 @@
 h1{
     color: #ffffff;
     text-align: center;
+    font-size: 42px;
+    font-family: Helvetica, sans-serif;
     padding-top: 50px;
 }
 #home_words{
     color: #ffffff;
     text-align: center;
+    font-size: 24px;
+    font-family: Helvetica, sans-serif;
 }
-.home_bottom{
+#home_bottom1{
+    position: relative;
+    left: 400px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px;
+    font-family: Helvetica, sans-serif;
+    border: 2px solid white;
+    padding: 5px 30px;
+    border-radius: 15px;
+}
+#home_bottom1 a{
+    text-decoration: none;
+    color: #fff;
+}
+#home_bottom1:hover,
+#home_bottom1:active {
+  background-color: #929292;
+}
+#home_bottom2{
+    text-decoration: none;
     color: #ffffff;
-    text-align: center;
+    position: relative;
+    left: 505px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px;
+    font-family: Helvetica, sans-serif;
+    border: 2px solid white;
+    padding: 5px 30px;
+    border-radius: 15px;
 }
-
+#home_bottom2 a{
+    text-decoration: none;
+    color: #fff;
+}
+#home_bottom2:hover,
+#home_bottom2:active {
+  background-color: #929292;
+}
 #name_nav{
     color: #444444;
     position: relative;
     top: 20px;
     left: 25px;
     font-size: 20px;
+    margin: 0 0 0 0;
 }
-ul li{
+
+#menu{
+    text-decoration: none;
+    text-align: right;
     list-style-type: none;
     font-size: 20px;
-    display: inline;
+}
+#menu li{
+    display: inline; 
+}
+#menu a{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: -16px;
+    padding: 10px;
+    margin-right: 20px;
     color: #444444;
-    text-align: center;
-    position: relative;
-    left: 600px;
-    bottom: 23px;
-    margin-right: 35px;
-    
+}
+#menu a:hover{
+    color: #629c44;
 }
 nav{
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: #ebebeb;
     height: 60px;
-    width: 1250px;
-    /*position: fixed;*/
+    width: 100%;
+    z-index: 1;
 }
-.line{
+hr{
     background-color: #629c44;
     width: 190px;
     height: 2px;
+    position: relative;
+    left: 540px;
 }
 h2{
     color:#232323;
@@ -68,8 +124,48 @@ h2{
     color: #444444;
     text-align: center;
 }
+.education{
+    color: #4c7a34;
+    position: relative;
+    left: 230px;
+    bottom: 80px;
+    width: 350px;
+}
+.education2{
+    color: #444444;
+    position: relative;
+    left: 230px;
+    bottom: 80px;
+    width: 350px;
+}
+.education3{
+    color: #444444;
+    position: relative;
+    left: 700px;
+    bottom: 80px;
+    width: 350px;
+}
+.education4{
+    color: #4c7a34;
+    position: relative;
+    left: 700px;
+    bottom: 80px;
+    width: 350px;
+}
 p{
     color: #444444;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    background: inherit;
+    border: 2px solid #4c7a34;
+    line-height: 100px;
+    text-align: center;
+    font-size: 18px;
+    color: #444444;
+    border-radius: 150px;
+	margin: 0 auto;
 }
 .portfolio{
     width: 200px;
@@ -79,45 +175,116 @@ p{
     top: 40%;
     margin: 10px;
 }
-.education{
-    color: #4c7a34;
-}
 #contact_nav{
     color: white;
     height: 700px;
-    width: 1250px;
+    max-width: 1300px;
     background-image: url("../img/contact.jpg");
     background-size: 1300px;
+    margin: 0 0 0 0;
 }
 #contact_me{
     color: white;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 30px;
 }
 #contact_leave_data{
     color: white;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 50px;
 }
 #contact_leave_message{
     color: white;
+    text-align: center;
+    font-size: 26px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
-#fb_icon{
-    width:35px;
-}
-#github_icon{
-    width:35px; 
-}
-#instagram_icon{
-    width:35px; 
-}
-#linkedin_icon{
-    width:35px;
-}
-#twitter_icon{
-    width:35px;
+.icon{
+    width: 35px;
+    position: relative;
+    top: 50px;
+    left: 300px;
+    padding-left: 80px;
 }
 footer{
     height: 40px;
-    width: 1250px;
+    max-width: 1300px;
     background-color: #ebebeb;
 }
-#footer{
+#footer2{
     color: #444444;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 15px;
+}
+#map{
+    width: 35px;
+    position: relative;
+    left: 300px;
+    padding-bottom: 15px;
+}
+#email{
+    width: 35px;
+    position: relative;
+    left: 550px;
+    padding-bottom: 15px;
+}
+#phone{
+    width: 35px;
+    position: relative;
+    left: 800px;
+    padding-bottom: 15px;
+}
+#map1{
+    color: white;
+    position: relative;
+    left: 250px;
+    display: inline-block;
+}
+#email1{
+    color: white;
+    position: relative;
+    left: 375px;
+    display: inline-block;
+    
+}
+#phone1{
+    color: white;
+    position: relative;
+    left: 480px;
+    display: inline-block;
+}
+.form_name{
+    position: relative;
+    left: 200px;
+    margin-left: 100px;
+}
+#comment{
+    top: 11px;
+    position: relative;
+    left: 300px;
+    margin-bottom: 100px;
+}
+#submit{
+  position: relative;
+  left: 550px;
+  top: 20px;
+  display: inline-block;
+  width: 170px;
+  margin: 8px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  background-color: inherit;
+}
+#submit:hover,
+#submit:active {
+  background-color: #fff;
+  color: #000;
 }

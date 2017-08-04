@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>OM Web-developer</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="shortcut icon" href="/img/icons/favicon.png">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index-layout.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <header id="home">
         <img src="img/logo.png" alt="logo" id="logo">
         <h1>Hello, I'm Olha Melnyk</h1>
         <p id="home_words">Front End Developer</p>
-        <p class="home_bottom">About me</p> <p class="home_bottom">My Portfolio</p>
+        <p id="home_bottom1"><a href="#about_nav">About me</a></p> <p id="home_bottom2"><a href="#portfolio_nav">My Portfolio</a></p>
     </header>
     <nav>
         <p id="name_nav">Olha Melnyk</p>
-        <ul>
+        <ul id="menu">
             <li><a href="#home">HOME</a></li>
             <li><a href="#about_nav">ABOUT</a></li>
             <li><a href="#portfolio_nav">PORTFOLIO</a></li>
@@ -25,8 +28,12 @@
     </nav>
     <article>
         <section id="about_nav">
+            <br>
+            <br>
             <h2>About me</h2>
-            <hr class="line">
+            <hr>
+            <br>
+            <br>
             <p id="my_photo"><img src="img/my-photo.jpg" alt="my-photo"></p>
             <p class="about_me">About me About me About me About me About me About me About me About me About me</p>
             <p class="about_me">About me About me About me About me About me About me About me About me.</p>
@@ -38,11 +45,15 @@
             <p class="about_me">About me About me About me About me About me About me About me About me About me </p>
             <p class="about_me">About me About me About me About me About me About me About me About me About me </p>
             <p class="about_me">About me About me About me About me About me About me About me About me .</p>
+            <br>
         </section>
-        <hr>
         <section id="portfolio_nav">
+            <br>
+            <br>
             <h2>My Portfolio</h2>
-            <hr class="line">
+            <hr>
+            <br>
+            <br>
             <p class="about_me">There are some of my projects. Please, go to "See more" to see more works and some details about it.</p>
             <br>
             <img src="img/portfolio/portfolio_2.jpg" alt="portfolio_2" class="portfolio"> 
@@ -54,53 +65,64 @@
             <img src="img/portfolio/portfolio_1.jpg" alt="portfolio_1" class="portfolio">
             <img src="img/portfolio/portfolio_2.jpg" alt="portfolio_2" class="portfolio">
             <img src="img/portfolio/portfolio_4.jpg" alt="portfolio_4" class="portfolio">
-            <hr>
         </section>
+        <br>
+        <br>
         <section id="education_nav">
             <h2>Education</h2>
-            <hr class = "line">
-            <p>2002-2013</p>
-            <p>School 10, Lviv</p>
-            <p class="education">High School Degree</p>
-            <p>2013-2017</p>
-            <p>Lviv Polytechnic National University</p>
-            <p class="education">Bachelor Degree</p>
-            <p>Computer Science, Computer Aided Design (CAD)</p>
-            <p>2017-Present</p>
-            <p>Lviv Polytechnic National University</p>
-            <p class="education">Master Degree</p>
-            <p>Computer Science, Computer Aided Design (CAD)</p>
             <hr>
+            <br>
+            <br>
+            <p class="circle">2002-2013</p>
+            <p class="education2" align="right">School 10, Lviv</p>
+            <p class="education" align="right">High School Degree</p>
+            <p class="circle">2013-2017</p>
+            <p class="education3">Lviv Polytechnic National University</p>
+            <p class="education4">Bachelor Degree</p>
+            <p class="education3">Computer Science, Computer Aided Design (CAD)</p>
+            <p class="circle">2017-Present</p>
+            <p class="education2" align="right">Lviv Polytechnic National University</p>
+            <p class="education" align="right">Master Degree</p>
+            <p class="education2" align="right">Computer Science, Computer Aided Design (CAD)</p>
         </section>
+        <br>
+        <br>
         <section id="contact_nav">
             <h2 id="contact_me">Contact me</h2>
             <p id="contact_leave_data">Please, leave your data and I will contact with you. Thank you!</p>
-            <p id="contact_leave_message">Leave me a message</p>
+            <img src="img/icons/map.jpg" alt="map" id="map">
+            <img src="img/icons/email.png" alt="email" id="email">
+            <img src="img/icons/phone.png" alt="phone" id="phone">
+            <br>
+            <p id="map1">5 Lukasha str.,  LV, UA</p>
+            <p id="email1">romanivna.199627@gmail.com</p>
+            <p id="phone1">+38 063 990 27 69</p>
             <form>
-            <label>
-                <input type="text" name="name" placeholder="Your name" required>
+                <p id="contact_leave_message">Leave me a message</p>
+            <label class="form_name">
+                <input type="text" name="name" placeholder="Your name" size="35" required>
             </label>
-            <label>
-                <input type="email" name="email" placeholder="Your email" required>
-            </label>
-            <br>
-            <br>
-            <label>
-                <textarea name="comment" placeholder="Your message" required></textarea>
+            <label class="form_name">
+                <input type="email" name="email" placeholder="Your email" size="35" required>
             </label>
             <br>
-            <input type="submit" value="Send message">
+            <br>
+            <label id="comment">
+                <textarea name="comment" placeholder="Your message" rows="5" cols="84" required></textarea>
+            </label>
+            <br>
+           <input type="submit" value="Send message" id="submit">
             </form>
             <br>
             <br>
-            <img src="img/icons/fb_icon.png" alt="fb_icon" id="fb_icon">
-            <img src="img/icons/github_icon.png" alt="github_icon" id="github_icon">
-            <img src="img/icons/instagram_icon.png" alt="instagram_icon" id="instagram_icon">
-            <img src="img/icons/linkedin_icon.png" alt="linkedin_icon" id="linkedin_icon">
-            <img src="img/icons/Twitter.png" alt="twitter_icon" id="twitter_icon">
+            <img src="img/icons/fb_icon.png" alt="fb_icon" class="icon">
+            <img src="img/icons/github_icon.png" alt="github_icon" class="icon">
+            <img src="img/icons/instagram_icon.png" alt="instagram_icon" class="icon">
+            <img src="img/icons/linkedin_icon.png" alt="linkedin_icon" class="icon">
+            <img src="img/icons/Twitter.png" alt="twitter_icon" class="icon">
     </article>
     <footer>
-        <p id="footer">2017 &copy; Melnyk</p>
+        <p id="footer2">2017 &copy; Melnyk</p>
     </footer>
 </body>
 </html>
