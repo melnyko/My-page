@@ -2,38 +2,51 @@
     margin: 0;
 }
 #home {
-    height: 700px;
+    height: 600px;
+    width: 100%;
     background-image: url("../img/home-picture.jpg");
-    background-position: center center;
-    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+    background-size: 100%;
+    
 }
 #logo{
     margin-top: 100px;
     margin-left: 70px;
     width: 100px;
 }
+#my-photo1{
+    display:flex;
+    justify-content:center;
+}
 #my_photo{
-    width: 100px;
-    position: relative;
-    left: 30%;
-    top: 40%;
+    width: 500px;
 }
 h1{
     color: #ffffff;
-    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items:center;
     font-size: 42px;
     font-family: Helvetica, sans-serif;
     padding-top: 50px;
 }
 #home_words{
     color: #ffffff;
-    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items:center;
     font-size: 24px;
     font-family: Helvetica, sans-serif;
 }
+#home_bottoms{
+    display:flex;
+    justify-content:space-around;
+    margin-left:300px;
+    margin-right:300px;
+}
 #home_bottom1{
-    position: relative;
-    left: 400px;
     display: inline-block;
     font-size: 16px;
     margin: 20px;
@@ -53,8 +66,6 @@ h1{
 #home_bottom2{
     text-decoration: none;
     color: #ffffff;
-    position: relative;
-    left: 505px;
     display: inline-block;
     font-size: 16px;
     margin: 20px;
@@ -73,11 +84,11 @@ h1{
 }
 #name_nav{
     color: #444444;
-    position: relative;
-    top: 20px;
-    left: 25px;
     font-size: 20px;
     margin: 0 0 0 0;
+    
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 #menu{
@@ -92,9 +103,8 @@ h1{
 #menu a{
     text-decoration: none;
     display: inline-block;
-    margin-top: -16px;
-    padding: 10px;
-    margin-right: 20px;
+    margin-top: 23px;
+    margin-right: 40px;
     color: #444444;
 }
 #menu a:hover{
@@ -103,18 +113,34 @@ h1{
 nav{
     position: fixed;
     top: 0;
-    left: 0;
+    margin: 0 auto;
     background-color: #ebebeb;
+    display: flex;
+    justify-content: space-between;
     height: 60px;
-    width: 100%;
+    width: 1300px;
     z-index: 1;
+}
+.hr{
+    display: flex;
+    justify-content:center;
+}
+.vertic{
+    display:flex;
+    justify-content:center;
+    margin-bottom: 25px;
+}
+.vertical{
+    background-color: #aaaaaa;
+    width: 1px;
+    height: 50px;
 }
 hr{
     background-color: #629c44;
     width: 190px;
     height: 2px;
-    position: relative;
-    left: 540px;
+    display:flex;
+    justify-content:center;
 }
 h2{
     color:#232323;
@@ -155,17 +181,20 @@ h2{
 p{
     color: #444444;
 }
+.circle1{
+    display:flex;
+    justify-content:center;
+}
 .circle{
     width: 100px;
     height: 100px;
     background: inherit;
     border: 2px solid #4c7a34;
     line-height: 100px;
-    text-align: center;
     font-size: 18px;
     color: #444444;
+    text-align:center;
     border-radius: 150px;
-	margin: 0 auto;
 }
 .portfolio{
     width: 200px;
@@ -180,7 +209,9 @@ p{
     height: 700px;
     max-width: 1300px;
     background-image: url("../img/contact.jpg");
-     background-position: center center;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
     background-size: cover;
 }
 #contact_me{
@@ -190,24 +221,29 @@ p{
     font-size: 30px;
 }
 #contact_leave_data{
+    display: flex;
+    justify-content:center;
     color: white;
-    text-align: center;
     font-size: 18px;
     padding-bottom: 50px;
 }
 #contact_leave_message{
     color: white;
-    text-align: center;
+    display: flex;
+    justify-content:center;
     font-size: 26px;
     padding-top: 40px;
     padding-bottom: 40px;
 }
+#icons_footer{
+    height:35px;
+    display:flex;
+    justify-content:space-between;
+    margin-left: 400px;
+    margin-right: 400px;
+}
 .icon{
     width: 35px;
-    position: relative;
-    top: 50px;
-    left: 300px;
-    padding-left: 80px;
 }
 footer{
     height: 40px;
@@ -220,59 +256,46 @@ footer{
     padding-top: 10px;
     padding-right: 15px;
 }
-#map{
+#icons_contact{
+    height: 35px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#map,#email,#phone{
     width: 35px;
-    position: relative;
-    left: 300px;
-    padding-bottom: 15px;
 }
-#email{
-    width: 35px;
-    position: relative;
-    left: 550px;
-    padding-bottom: 15px;
+#address{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-left: 100px;
+    margin-right: 100px;
 }
-#phone{
-    width: 35px;
-    position: relative;
-    left: 800px;
-    padding-bottom: 15px;
-}
-#map1{
+#map1,#email1,#phone1{
     color: white;
-    position: relative;
-    left: 250px;
-    display: inline-block;
-}
-#email1{
-    color: white;
-    position: relative;
-    left: 375px;
-    display: inline-block;
-    
-}
-#phone1{
-    color: white;
-    position: relative;
-    left: 480px;
-    display: inline-block;
 }
 .form_name{
-    position: relative;
-    left: 200px;
-    margin-left: 100px;
+   display:flex;
+   justify-content: center;
+}
+#form1{
+    margin-right:5px;
+}
+#form2{
+    margin-right:5px;
+    margin-left:40px;
 }
 #comment{
     top: 11px;
-    position: relative;
-    left: 300px;
-    margin-bottom: 100px;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 5px;
 }
 #submit{
-  position: relative;
-  left: 550px;
-  top: 20px;
-  display: inline-block;
+  
   width: 170px;
   margin: 8px;
   color: white;
@@ -288,3 +311,8 @@ footer{
   background-color: #fff;
   color: #000;
 }
+#submit1{
+  display: flex;
+  justify-content: center;
+}
+

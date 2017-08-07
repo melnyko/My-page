@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>OM Web-developer</title>
@@ -9,33 +10,41 @@
     <link rel="stylesheet" href="css/index-layout.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
     <header id="home">
         <img src="img/logo.png" alt="logo" id="logo">
         <h1>Hello, I'm Olha Melnyk</h1>
         <p id="home_words">Front End Developer</p>
-        <p id="home_bottom1"><a href="#about_nav">About me</a></p>
-        <p id="home_bottom2"><a href="#portfolio_nav">My Portfolio</a></p>
+        <div id="home_bottoms">
+            <p id="home_bottom1"><a href="#2" class="smooth">About me</a></p>
+            <p id="home_bottom2"><a href="#3" class="smooth">My Portfolio</a></p>
+        </div>
     </header>
     <nav>
         <p id="name_nav">Olha Melnyk</p>
         <ul id="menu">
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about_nav">ABOUT</a></li>
-            <li><a href="#portfolio_nav">PORTFOLIO</a></li>
-            <li><a href="#education_nav">RESUME</a></li>
-            <li><a href="#contact_nav">CONTACT</a></li>
+            <li><a href="#home" class="smooth">HOME</a></li>
+            <li><a href="#2" class="smooth">ABOUT</a></li>
+            <li><a href="#3" class="smooth">PORTFOLIO</a></li>
+            <li><a href="#4" class="smooth">RESUME</a></li>
+            <li><a href="#5" class="smooth">CONTACT</a></li>
         </ul>
     </nav>
+    <br id="2">
+    <br>
     <article>
         <section id="about_nav">
             <br>
             <br>
             <h2>About me</h2>
-            <hr>
+            <div class="hr">
+                <hr>
+            </div>
             <br>
             <br>
-            <p id="my_photo"><img src="img/my-photo.jpg" alt="my-photo"></p>
+            <div id="my-photo1"><img src="img/my-photo.jpg" alt="my-photo" id="my_photo"></div>
+            <br>
             <p class="about_me">About me About me About me About me About me About me About me About me About me</p>
             <p class="about_me">About me About me About me About me About me About me About me About me.</p>
             <br>
@@ -46,13 +55,16 @@
             <p class="about_me">About me About me About me About me About me About me About me About me About me </p>
             <p class="about_me">About me About me About me About me About me About me About me About me About me </p>
             <p class="about_me">About me About me About me About me About me About me About me About me .</p>
+            <br id="3">
             <br>
         </section>
         <section id="portfolio_nav">
             <br>
             <br>
             <h2>My Portfolio</h2>
-            <hr>
+            <div class="hr">
+                <hr>
+            </div>
             <br>
             <br>
             <p class="about_me">There are some of my projects. Please, go to "See more" to see more works and some details about it.</p>
@@ -66,64 +78,95 @@
             <img src="img/portfolio/portfolio_1.jpg" alt="portfolio_1" class="portfolio">
             <img src="img/portfolio/portfolio_2.jpg" alt="portfolio_2" class="portfolio">
             <img src="img/portfolio/portfolio_4.jpg" alt="portfolio_4" class="portfolio">
+            <br>
+            <br id="4">
+            <br>
         </section>
-        <br>
+        <br id="4">
         <br>
         <section id="education_nav">
             <h2>Education</h2>
-            <hr>
+            <div class="hr">
+                <hr>
+            </div>
             <br>
             <br>
-            <p class="circle">2002-2013</p>
+            <div class="circle1">
+                <p class="circle">2002-2013</p>
+            </div>
             <p class="education2" align="right">School 10, Lviv</p>
             <p class="education" align="right">High School Degree</p>
-            <p class="circle">2013-2017</p>
+            </div>
+           <div class="vertic">
+                <hr class="vertical">
+            </div>
+            <div class="circle1">
+                <p class="circle">2013-2017</p>
+            </div>
             <p class="education3">Lviv Polytechnic National University</p>
             <p class="education4">Bachelor Degree</p>
             <p class="education3">Computer Science, Computer Aided Design (CAD)</p>
-            <p class="circle">2017-Present</p>
+            <div class="vertic">
+                <hr class="vertical">
+            </div>
+            <div class="circle1">
+                <p class="circle">2017-Present</p>
+            </div>
             <p class="education2" align="right">Lviv Polytechnic National University</p>
             <p class="education" align="right">Master Degree</p>
             <p class="education2" align="right">Computer Science, Computer Aided Design (CAD)</p>
         </section>
-        <br>
+        <br id="5">
         <br>
         <section id="contact_nav">
             <h2 id="contact_me">Contact me</h2>
             <p id="contact_leave_data">Please, leave your data and I will contact with you. Thank you!</p>
-            <img src="img/icons/map.jpg" alt="map" id="map">
-            <img src="img/icons/email.png" alt="email" id="email">
-            <img src="img/icons/phone.png" alt="phone" id="phone">
+            <div id="icons_contact">
+                <img src="img/icons/map.jpg" alt="map" id="map">
+                <img src="img/icons/email.png" alt="email" id="email">
+                <img src="img/icons/phone.png" alt="phone" id="phone">
+            </div>
             <br>
-            <p id="map1">5 Lukasha str., LV, UA</p>
-            <p id="email1">romanivna.199627@gmail.com</p>
-            <p id="phone1">+38 063 990 27 69</p>
-            <form>
+            <div id="address">
+                <p id="map1">5 Lukasha str., LV, UA</p>
+                <p id="email1">romanivna.199627@gmail.com</p>
+                <p id="phone1">+38 063 990 27 69</p>
+            </div>
+            <form method = "POST" action = "https://formspree.io/romanivna.199627@gmail.com">
                 <p id="contact_leave_message">Leave me a message</p>
-                <label class="form_name">
+                <div class="form_name">
+                    <label id="form1">
                 <input type="text" name="name" placeholder="Your name" size="35" required>
             </label>
-                <label class="form_name">
+                    <label id="form2">
                 <input type="email" name="email" placeholder="Your email" size="35" required>
             </label>
+                </div>
                 <br>
                 <br>
                 <label id="comment">
-                <textarea name="comment" placeholder="Your message" rows="5" cols="84" required></textarea>
+                <textarea name="comment" placeholder="Your message" rows="5" cols="76" required></textarea>
             </label>
                 <br>
-                <input type="submit" value="Send message" id="submit">
+                <div id="submit1">
+                    <input type="submit" value="Send message" id="submit">
+                </div>
             </form>
             <br>
             <br>
-            <img src="img/icons/fb_icon.png" alt="fb_icon" class="icon">
-            <img src="img/icons/github_icon.png" alt="github_icon" class="icon">
-            <img src="img/icons/instagram_icon.png" alt="instagram_icon" class="icon">
-            <img src="img/icons/linkedin_icon.png" alt="linkedin_icon" class="icon">
-            <img src="img/icons/Twitter.png" alt="twitter_icon" class="icon">
+            <div id="icons_footer">
+                <a href="https://www.facebook.com/melnyk.olya.3" target="_blank"><img src="img/icons/fb_icon.png" alt="fb_icon" class="icon"></a>
+                <a href="https://github.com/" target="_blank"><img src="img/icons/github_icon.png" alt="github_icon" class="icon"></a>
+                <a href="https://www.instagram.com/olichkamelnyk/" target="_blank"><img src="img/icons/instagram_icon.png" alt="instagram_icon" class="icon"></a>
+                <a href="https://www.linkedin.com/in/olha-melnyk-b3ba45148/" target="_blank"><img src="img/icons/linkedin_icon.png" alt="linkedin_icon" class="icon"></a>
+                <img src="img/icons/Twitter.png" alt="twitter_icon" class="icon">
+            </div>
     </article>
     <footer>
         <p id="footer2">2017 &copy; Melnyk</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/smooth-scroll.js"></script>
 </body>
+
 </html>

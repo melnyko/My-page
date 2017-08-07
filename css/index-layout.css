@@ -1,3 +1,7 @@
+body{
+    max-width:1300px;
+    margin: 0 auto;
+}
 @media screen and (max-width: 720px) {
     home{
         height: 100px;
@@ -5,29 +9,14 @@
     h1 {
         font-size: 15px;
     }
+
     #home_words{
         font-size: 8px;
     }
     #logo{
         width: 50px;
     }
-    #my_photo{
-        width: 50px;
-        position: relative;
-        left: 5%;
-        top: 10%;
-    }
-    .form_name{
-        position: relative;
-        left: 0;
-        margin: 75px;
-    }
-    #comment{
-        position: relative;
-        left: 0;
-        margin: 75;
-        width: 20px;
-    }
+    
 }
 @media screen and (max-width: 450px) {
    
